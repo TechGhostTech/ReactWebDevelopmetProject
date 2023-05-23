@@ -4,6 +4,8 @@ import Home from './component/Home';
 import {Switch, Route } from "react-router-dom";
 import Products from './component/Products';
 import Product from './component/Product';
+import Login from './component/Login';
+import Register from './component/Register';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/products" component={Products} />
           <Route exact path="/products/:id" component={Product} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={Register} />
         </Switch>
       
     </>
