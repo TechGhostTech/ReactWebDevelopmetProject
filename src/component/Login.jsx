@@ -26,18 +26,20 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Username:</label>
-        <input type="text" value={username} onChange={handleUsernameChange} />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" value={password} onChange={handlePasswordChange} />
-      </div>
-      <button type="submit">Login</button>
-      {loginError && <p>Invalid username or password</p>}
-    </form>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Username:</label>
+          <input type="text" value={username} onChange={handleUsernameChange} />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" value={password} onChange={handlePasswordChange} />
+        </div>
+        <button type="submit">Login</button>
+        {loginError && <p>Invalid username or password</p>}
+      </form>
+    </div>
   );
 };
 
