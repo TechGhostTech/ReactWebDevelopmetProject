@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
-import { useDispatch } from 'react-redux';
-import { addCart } from '../redux/action';
+
+import {UpdateCartSize} from "./cartHandler";
 import { useParams } from "react-router";
 import {NavLink} from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
+import axios from 'axios';
+
 
 const Product = () => {
 
@@ -11,9 +13,24 @@ const Product = () => {
     const [product,setProduct] = useState([]);
     const[loading, setLoading] = useState(false);
 
-    const dispatch = useDispatch();
-    const addProduct = (product) => {
-        dispatch(addCart(product));
+
+    const addProduct = async(product) => {
+       
+        const response1 = await axios.get(`http://localhost:3000/cart?id=${id}`);
+        if(response1.data.length !== 0){          
+            const response2 = await axios.put(`http://localhost:3000/cart/${id}`,{
+                id : product.id,
+                count : parseInt(response1.data[0].count)+1
+            
+            });
+                  
+        }else{
+            const response3 = await axios.post(`http://localhost:3000/cart/`, {
+                id : product.id,
+                count : 1
+            });
+        }
+        UpdateCartSize();
     }
 
     useEffect(() => {
@@ -25,7 +42,7 @@ const Product = () => {
         }
         getProduct();
 
-    }, []) ;
+    },[]) ;
 
     const Loading = () => {
         return (
