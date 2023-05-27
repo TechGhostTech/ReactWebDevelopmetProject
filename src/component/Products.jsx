@@ -61,7 +61,7 @@ const Products = () => {
                     <button className="btn btn-outline-dark me-2" onClick={()=>setFilter(data)}>All</button>
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("men's clothing")}>Men</button>
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("women's clothing")}>Women</button>
-                    <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("jewelery")}>Jewelery</button>
+                    <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("jewelery")}>Jewelry</button>
                     <button className="btn btn-outline-dark me-2" onClick={()=>filterProduct("electronics")}>Electronic</button>
                 </div>
                 {filter.map((product) => {

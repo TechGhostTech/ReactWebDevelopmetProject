@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# CS391Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- The concept of the project is about an e-commerce website that has various kinds of goods. Website has the purpose of connecting users and customers with the appropriate goods regarding themself and presenting a customer friendly, easy user interface e-commerce website.
 
-## Available Scripts
 
-In the project directory, you can run:
+- When the user enters the website for the first time, is greeted by the homepage. The user can examine the products, add to the cart or make a purchase without creating an account. You can enter the products page and examine the all goods with the Products subheading in the NavBar. Instead of seeing all the products at the same time, you can use the side-by-side buttons to see a specific category which are All, Men, Women, Jewelry and Electronics. In order to examine any product, users can reach the product's own page by using the "View" button at the bottom of the product. The product's category, name, rating, details can be seen on the left, add to cart and view cart buttons can be seen on the right, with the picture of the product on the left. Also on the top right of the navbar, it can be seen the Login, Register and Cart buttons to go to the desired pages. If it is desired to register on the Web Site, when the form on the registration page is filled in as desired, it will be possible to successfully become a member of the page. There are some required information types and features in the some inputs, for instance, phone number should be 10 digit or password and repeat password should be matched in order to register in the system.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Responsibilities :
 
-### `npm test`
+- Creation of GitHub repository and project: Ilayda Surkultay
+- Visualization of Navbar, Homepage, Products and the code parts: Yusuf Can Tartar
+- View Page and link of products' view page: Yusuf Can Tartar
+- Downloading and using json-server and transferring the fake api found from the internet to it: Ali Tuna Yasa
+- Filtering products and adding them to cart: Ali Tuna Yasa
+- Creating login, register pages: Ilayda Surkultay
+- Installing and using db.json for register page and restrictions : Ilayda Surkultay
+- CSS styles for the Register and Login pages: Ali Tuna Yasa
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instruction 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To the terminal:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- npx create-react-app CS391Project
 
-## Learn More
+- cd CS391Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- npm i bootstrap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- npm i font-awesome : for using icons (but never used)
 
-### Code Splitting
+- npm redux react-redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- npm i redux react-redux
 
-### Analyzing the Bundle Size
+- npm i react-router-dom@5.3.0 : for using switch 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- npm install reactstrap react react-dom 
 
-### Making a Progressive Web App
+- npm install axios
+  
+- npm install react-loading-skeleton : 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Close the terminal 
 
-### Advanced Configuration
+Open the project in VScode 
+- json-server --watch db.json
+- npm start
+### json-server command should be executed before npm start and the prompt for changing ports when starting the website server should be accepted
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
