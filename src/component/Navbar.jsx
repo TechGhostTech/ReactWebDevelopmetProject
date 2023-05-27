@@ -1,10 +1,24 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
 
-const Navbar = () => {
-    const state = useSelector((state)=> state.handleCart)
-    return (
+import React, { useState } from 'react';
+
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    Button
+  } from 'reactstrap';
+  
+
+const Navbar1 = (args) => {
+   
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
+   /* return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
                 <div className="container">
@@ -44,7 +58,37 @@ const Navbar = () => {
                 </div>
             </nav>
         </div>
-    );
+
+
+
+    );*/
+    return (
+        <div>
+          <Navbar expand="md" {...args}>
+            <NavbarBrand href="/">CS 391</NavbarBrand>
+            <NavbarToggler onClick={toggle} />
+            <Collapse isOpen={isOpen} navbar>
+              <Nav className="me-auto" navbar>
+                <NavItem>
+                  <NavLink href="/">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/products">Products</NavLink>
+                </NavItem>
+                
+ 
+              </Nav>
+              <div>
+              <Button href="/login">Login</Button>
+              {' '}
+              <Button href="/register">Register</Button>
+              {' '}
+              <Button href="/cart">Cart</Button>
+              </div>
+            </Collapse>
+          </Navbar>
+        </div>
+      );
 }
 
-export default Navbar;
+export default Navbar1;

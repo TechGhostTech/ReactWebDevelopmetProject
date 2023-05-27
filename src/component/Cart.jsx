@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import {deleteCart} from '../redux/action/index'
 import { NavLink } from 'react-router-dom'
 
 
+
 const Cart = () => {    
-  
+   // const [cartSize, setCartSize] = useState(0);
     const state = useSelector((state)=> state.addCart || [])
     const dispatch = useDispatch()
 
