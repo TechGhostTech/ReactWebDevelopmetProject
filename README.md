@@ -7,22 +7,6 @@
 
 
 
-## Responsibilities :
-
-- Creation of GitHub repository and project: Ilayda Surkultay
-- Visualization of Navbar, Homepage, Products and the code parts: Yusuf Can Tartar
-- View Page and link of products' view page: Yusuf Can Tartar
-- Downloading and using json-server and transferring the fake api found from the internet to it: Ali Tuna Yasa
-- Filtering products and adding them to cart: Ali Tuna Yasa
-- Creating login, register pages: Ilayda Surkultay
-- Installing and using db.json for register page and restrictions : Ilayda Surkultay
-- CSS styles for the Register and Login pages: Ali Tuna Yasa
-
-
-
-
-
-
 
 
 ## Instruction 
